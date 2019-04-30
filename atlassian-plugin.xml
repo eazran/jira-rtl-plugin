@@ -1,19 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<atlassian-plugin key="org.hasadna.jira_rtl" name="jira_rtl" plugins-version="2">
+<atlassian-plugin key="com.cal.jira.jira-rtl-plugin" name="jira-rtl-plugin" plugins-version="2">
   <plugin-info>
-    <description>This is a right-to-left plugin for Atlassian JIRA.</description>
-    <version>1.0.6</version>
-    <vendor name="The Public Knoweldge Workshop" url="http://www.hasadna.org.il/" />
+    <description>This is a fork of the right-to-left plugin for Atlassian JIRA for VISA CAL.</description>
+    <version>1.0.8</version>
+    <vendor name="Visa C.A.L." url="https://alm-prdappgit01:8443/projects/DEV/repos/jira-rtl-plugin/browse/" />
     <param name="plugin-icon">images/pluginIcon.png</param>
     <param name="plugin-logo">images/pluginLogo.png</param>
   </plugin-info>
   <resource type="i18n" name="i18n" location="jira_rtl" />
   <web-resource name="Resources" key="css_resources">
     <dependency>com.atlassian.auiplugin:ajs</dependency>
+    <dependency>com.atlassian.auiplugin:aui-table</dependency>
+    <dependency>com.atlassian.auiplugin:aui-restfultable</dependency>
+    <dependency>com.atlassian.auiplugin:aui-page-layout</dependency>
     <resource name="rtl.css" type="download" location="/css/rtl.css" />
     <context>atl.general</context>
     <context>atl.admin</context>
     <context>atl.userprofile</context>
-    <context>atl.popup</context>
+    <context>atl.popup</context>    
+    <context>atl.error</context>
+	  <context>atl.dashboard</context>
+	<context>jira.error</context>
+  <context>jira.admin</context>
+  <context>jira.general</context>
+  <context>jira.popup</context>
+  <context>jira.userprofile</context>
+	<context>jira.dashboard</context>
+	<context>jira.browse</context>
+	<context>jira.view.issue</context>
+	<context>jira.create.issue</context>
+	<context>jira.navigator.advanced</context>
+	<context>jira.navigator.simple</context>
+	
   </web-resource>
 </atlassian-plugin>
