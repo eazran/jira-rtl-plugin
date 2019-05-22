@@ -2,8 +2,8 @@
 <atlassian-plugin key="com.cal.jira.jira-rtl-plugin" name="jira-rtl-plugin" plugins-version="2">
   <plugin-info>
     <description>This is a fork of the right-to-left plugin for Atlassian JIRA for VISA CAL.</description>
-    <version>1.0.8</version>
-    <vendor name="Visa C.A.L." url="https://alm-prdappgit01:8443/projects/DEV/repos/jira-rtl-plugin/browse/" />
+    <version>1.0.9</version>
+    <vendor name="Visa C.A.L." url="https://github.com/eazran/jira-rtl-plugin/" />
     <param name="plugin-icon">images/pluginIcon.png</param>
     <param name="plugin-logo">images/pluginLogo.png</param>
   </plugin-info>
@@ -15,22 +15,8 @@
     <dependency>com.atlassian.auiplugin:aui-page-layout</dependency>
     <resource name="rtl.css" type="download" location="/css/rtl.css" />
     <context>atl.general</context>
-    <context>atl.admin</context>
-    <context>atl.userprofile</context>
-    <context>atl.popup</context>    
-    <context>atl.error</context>
-	  <context>atl.dashboard</context>
-	<context>jira.error</context>
-  <context>jira.admin</context>
-  <context>jira.general</context>
-  <context>jira.popup</context>
-  <context>jira.userprofile</context>
-	<context>jira.dashboard</context>
-	<context>jira.browse</context>
-	<context>jira.view.issue</context>
-	<context>jira.create.issue</context>
-	<context>jira.navigator.advanced</context>
-	<context>jira.navigator.simple</context>
-	
   </web-resource>
-</atlassian-plugin>
+  <web-resource key="customizations" name="JIRA Editor Reference Plugin Customizations">
+    <context>jira.rich.editor</context>
+    <resource type="download" name="js/markdown-headings.js" location="js/markdown-headings.js"/>
+</web-resource></atlassian-plugin>
