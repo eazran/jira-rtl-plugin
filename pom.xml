@@ -10,8 +10,7 @@
     <version>1.0.8-SNAPSHOT</version>
 
     <organization>
-        <name>VISA CAL</name>
-        <url>https://alm-prdappjir01:8443/</url>
+        <name>VISA CAL</name>        
     </organization>
 
     <name>jira-rtl-plugin</name>
