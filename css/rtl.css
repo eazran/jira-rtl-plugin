@@ -16,23 +16,28 @@
     direction: rtl;
 }
 
-/* issue description*/
-/* not working */ 
-body#tinymce.mce-content-body {
-    margin: 8px 1px 8px 1px;
-    background: white;
-    direction: rtl !important;
+/* issue title in search results*/
+.details-layout .split-view .list-results-panel .list-panel .issue-list>li .splitview-issue-link .issue-link-summary {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    margin-top: 3px;
+    direction: rtl;
 }
-/* not working */
 
-/* Issue comments */
-/* not working */
-div.user-content-block
-    overflow: auto;
-    overflow-y: hidden;
-    direction: rtl !important;
+/* issue title in clone dialog*/
+form.aui .long-field {
+    max-width: 500px;
+    direction: rtl;
 }
-/* not working */
+
+/* Linked stories list in epic */
+.ghx-issuetable .ghx-summary {
+    min-width: 200px;
+    width: 100%;
+    direction: rtl;
+}
 
 /* Issue label */
 ul.labels {
@@ -40,5 +45,65 @@ ul.labels {
     list-style-type: none;
     margin: 0 0 -5px;
     padding: 0;
+    direction: rtl;
+}
+
+/* Issue description field label */
+.user-content-block {
+    overflow: auto;
+    overflow-y: hidden;
+    direction: rtl !important;
+}
+
+/* Issue comments */
+.action-body {
+    overflow: auto;
+    overflow-y: hidden;
+    margin: 0;
+    margin-top: 10px;
+    direction: rtl;
+}
+
+/* epic link on issue */
+a.aui-label {    
+    direction: rtl;
+}
+
+/* Releases table */
+.versions-table .versions-table__name a {
+    display: inline-block;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    line-height: normal;
+    direction: rtl;
+}
+
+/* Issue list in a release */
+#release-report table.aui .summary>a {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    vertical-align: bottom;
+    direction: rtl;
+}
+
+/* Components in components page */
+.components-table .components-table__name a {
+    display: inline-block;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    line-height: normal;
+	direction: rtl;
+}
+
+#components-add__component input, #components-add__component select {
+    max-width: none;
     direction: rtl;
 }
