@@ -7,7 +7,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.cal.jira</groupId>
     <artifactId>jira-rtl-plugin</artifactId>
-    <version>1.0.8-SNAPSHOT</version>
+    <version>1.0.10-SNAPSHOT</version>
 
     <organization>
         <name>VISA CAL</name>        
@@ -35,11 +35,11 @@
     </build>
 
     <properties>
-        <jira.version>7.8.4</jira.version>
-        <amps.version>5.0.4</amps.version>
-        <plugin.testrunner.version>1.2.0</plugin.testrunner.version>
+        <jira.version>8.3.4</jira.version>
+<!--        <amps.version>5.0.4</amps.version> -->
+<!--        <plugin.testrunner.version>1.2.0</plugin.testrunner.version>  -->
 		<!-- TestKit version 5.x for JIRA 5.x, 6.x for JIRA 6.x -->
-		<testkit.version>5.2.26</testkit.version>
+<!--		<testkit.version>5.2.26</testkit.version>  -->
     </properties>
 
 </project>

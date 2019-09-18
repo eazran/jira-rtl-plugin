@@ -32,6 +32,27 @@ form.aui .long-field {
     direction: rtl;
 }
 
+/* Project name in create issue dialog */
+.chrome form.aui .aui-ss>.aui-ss-field, .chrome .jiraform .aui-ss>.aui-ss-field {
+    vertical-align: middle;
+    direction: rtl;
+}
+
+/* Project name in projects menu top bar */
+.aui-dropdown2.aui-style-default .aui-dropdown2-checkbox, .aui-dropdown2.aui-style-default .aui-dropdown2-radio, .aui-dropdown2.aui-style-default .aui-icon-container {
+    padding-left: 35px;
+    background-position: 10px 7px;
+    background-repeat: no-repeat;
+    position: relative;
+    direction: rtl;
+}
+
+/* Labels list in create issue dialog */
+.aui-list a.active, .aui-list .aui-list-item.active>a {
+    color: #42526e;
+    direction: rtl;
+}
+
 /* Linked stories list in epic */
 .ghx-issuetable .ghx-summary {
     min-width: 200px;
@@ -79,6 +100,17 @@ a.aui-label {
     line-height: normal;
     direction: rtl;
 }
+/* Releases table description field */
+.versions-table .versions-table__description>div {
+    display: inline-block;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    line-height: normal;
+    display: block;
+    direction: rtl;
+}
 
 /* Issue list in a release */
 #release-report table.aui .summary>a {
@@ -89,6 +121,14 @@ a.aui-label {
     position: relative;
     width: 100%;
     vertical-align: bottom;
+    direction: rtl;
+}
+
+/* fields in release edit dialog */
+form.aui .aui-select2-container .select2-choices, form.aui .password, form.aui .select, form.aui .text {
+    height: 2.14285714em;
+    line-height: 1.4285714285714;
+    padding: 4px 5px;
     direction: rtl;
 }
 
@@ -105,5 +145,35 @@ a.aui-label {
 
 #components-add__component input, #components-add__component select {
     max-width: none;
+    direction: rtl;
+}
+
+/* description field in components page */
+.components-table .components-table__description>div {
+    display: inline-block;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    line-height: normal;
+    word-break: break-all;
+    display: block;
+    direction: rtl;
+}
+
+/* Project name on side bar */
+.aui-page-header-actions, .aui-page-header-image, .aui-page-header-main {
+    box-sizing: border-box;
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    vertical-align: top;
+    direction: rtl;
+}
+
+/* Report Title */
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+    margin-top: 0;
     direction: rtl;
 }
